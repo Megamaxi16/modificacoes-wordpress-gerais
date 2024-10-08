@@ -1,0 +1,19 @@
+<script> 
+/*Seleciona e redireciona os links do woocommerce
+Altere por sua própria conta e risco */
+
+        var elemento = document.querySelectorAll('.button.product_type_simple.add_to_cart_button.ajax_add_to_cart.sober-loop-atc-button');
+        elemento.forEach(elemento => {
+            console.log('Link inicial:', elemento.href);
+            elemento.href = 'https://www.google.com/';
+            console.log('Link Final: ', elemento.href)
+            elemento.classList.remove('ajax_add_to_cart')
+        });
+
+        var elementoSvg = document.querySelectorAll('.button.product_type_simple.add_to_cart_button.sober-loop-atc-button svg');
+        elementoSvg.forEach(svg=>{
+            console.log(svg.getAttribute('href'));
+            svg.remove();
+        });
+
+</script>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações Nutricionais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.nutrition-facts {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nutrition-facts h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 2px solid #333;
+}
+
+td.value, td.percent {
+    text-align: center;
+}
+
+.percent {
+    width: 20%;
+}
+
+.disclaimer {
+    font-size: 10px;
+    margin-top: 10px;
+    text-align: center;
+    color: #555;
+}
+
+</style>
+<body>
+    <div class="nutrition-facts">
+        <h2>Informações Nutricionais</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Quantidade por porção</th>
+                    <th class="percent">%VD*</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Valor Energético</td>
+                    <td class="value">349 kcal = 1466 kJ</td>
+                    <td class="percent">17%</td>
+                </tr>
+                <tr>
+                    <td>Carboidrato</td>
+                    <td class="value">26g</td>
+                    <td class="percent">9%</td>
+                </tr>
+                <tr>
+                    <td>Proteína</td>
+                    <td class="value">14g</td>
+                    <td class="percent">19%</td>
+                </tr>
+                <tr>
+                    <td>Gorduras Totais</td>
+                    <td class="value">21g</td>
+                    <td class="percent">38%</td>
+                </tr>
+                <tr>
+                    <td>Gorduras Saturadas</td>
+                    <td class="value">7,5g</td>
+                    <td class="percent">34%</td>
+                </tr>
+                <tr>
+                    <td>Gorduras Trans</td>
+                    <td class="value">0g</td>
+                    <td class="percent">-</td>
+                </tr>
+                <tr>
+                    <td>Fibra Alimentar</td>
+                    <td class="value">3,9g</td>
+                    <td class="percent">16%</td>
+                </tr>
+                <tr>
+                    <td>Sódio</td>
+                    <td class="value">624mg</td>
+                    <td class="percent">26%</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="disclaimer">*Valores diários de referência com base em uma dieta de 2.000 kcal ou 8.400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas.</p>
+    </div>
+</body>
+</html>

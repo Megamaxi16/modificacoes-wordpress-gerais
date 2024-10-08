@@ -1,0 +1,21 @@
+Tipos de position:
+Static
+Relative
+Absolute
+Fixed
+Sticky
+
+Static: normal, do jeito que eu já sei mexer
+
+Relative: Semelhante ao static, mas eu consigo mexer o elemento usando top, left, right e bottom. Quando eu mexo o elemento, meio que os outros elementos respeitam a posição original, como se o elemento com position relative ainda estivesse no mesmo lugar. Ele vai para frente dos outros, acho que dá pra controlar isso com z-index
+Quando eu uso o top, left ... os números e distâncias ficam referentes à posição original do elemento. 
+Ele também pode estourar o elemento pai.
+Se eu usar % ele calcula a partir da posição dele, mas a porcentagem é do pai
+
+
+Absolute: Esse aí é meio doidão. Se eu dou position absolute é como se ele saísse para fora da tela. Uma diferença com o position relative é que os outros elementos ignoram a existência dele e continuam o fluxo normal. Já o absolute fica pra fora
+Outra coisa é que quando eu usar o top, left... para alterar a posição dele, ele fica referente ao contêiner pai que tem o position diferente de static. Se nenhum pai tiver position != static então ele vai ficar referente ao <html>
+
+Fixed: Esse aí fica fixo em relação à tela, se eu der scroll ele vai continuar grudado na tela como se fosse um post-it grudado no monitor
+
+Sticky: tipo os menus do wordpress. Gruda na tela de acordo com a coordenada que eu der. Pode ser referente ao scroll do mouse.

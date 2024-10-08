@@ -1,0 +1,33 @@
+<script>    
+/* O que preciso fazer:
+
+1- Adicionar as classes que chamam o modal aos links do botão comprar e remover a classe do ajax do botão de comprar.
+2- Trocar link do botão de comprar de acordo com a descrição escondida*/
+
+//Seleciona todos os produtos são li filhos diretos de ul com essas classes
+    const lista = document.querySelectorAll('ul.products.columns-4 li');
+
+    //itera sobre cada li, que é cada produto que aparece
+    lista.forEach( produto=>{
+
+        //itera sobre todos os  'a' que tem dentro de buttons
+        const listaClassesA = produto.classList.querySelectorAll('div.buttons a');
+        listaClassesA.classList.forEach(classeDoA =>{
+
+            //adiciona as classes que chamam o modal
+            classeDoA.classList.add('woocommerce-LoopProduct-link woocommerce-loop-product__link');
+
+            //tira o adicionar ao carrinho
+            classeDoA.classList.remove('ajax_add_to_cart ');
+        });
+
+    });
+
+
+    //tira os botões de add to wishlist e compare
+    const elementoSvg = document.querySelectorAll('.button.product_type_simple.add_to_cart_button.sober-loop-atc-button svg');
+    elementoSvg.forEach(svg=>{
+        svg.remove();
+    });
+            
+        </script>

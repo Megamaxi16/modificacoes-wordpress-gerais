@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content Example</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            width: 50px;
+            height: 50px;
+            background-color: lightblue;
+            border: 1px solid darkblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flex-start {
+            justify-content: flex-start;
+        }
+
+        .flex-end {
+            justify-content: flex-end;
+        }
+
+        .center {
+            justify-content: center;
+        }
+
+        .space-between {
+            justify-content: space-between;
+        }
+
+        .space-around {
+            justify-content: space-around;
+        }
+
+        .space-evenly {
+            justify-content: space-evenly;
+        }
+
+        .start {
+            justify-content: start;
+        }
+
+        .end {
+            justify-content: end;
+        }
+
+        .left {
+            justify-content: left;
+        }
+
+        .right {
+            justify-content: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container flex-start">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <div class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <div class="container center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <div class="container space-between">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <div class="container space-around">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <div class="container space-evenly">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <div class="container start">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <div class="container end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <div class="container left">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <div class="container right">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>
