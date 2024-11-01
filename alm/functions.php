@@ -264,7 +264,7 @@ if ( ! function_exists( 'hello_elementor_body_open' ) ) {
 	}
 }
 
-
+//Rdroval começo
 // Cria o shortcode [meu_botao_add_carrinho]
 function meu_shortcode_add_ao_carrinho() {
     global $product;
@@ -347,7 +347,7 @@ function meu_shortcode_add_ao_carrinho() {
     <?php
 
     return ob_get_clean();
-}
+} //Rdorval fim
 add_shortcode( 'meu_botao_add_carrinho', 'meu_shortcode_add_ao_carrinho' );
 
 // Manipulador AJAX para adicionar ao carrinho
